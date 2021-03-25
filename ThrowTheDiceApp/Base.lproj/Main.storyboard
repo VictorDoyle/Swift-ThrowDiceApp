@@ -28,7 +28,7 @@
                                 <rect key="frame" x="49" y="428" width="132" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-D3-36Y" userLabel="DiceTwo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-D3-36Y">
                                 <rect key="frame" x="239" y="428" width="132" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -40,11 +40,18 @@
                                 <state key="normal" title="Roll The Dice">
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollDiceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIg-th-6Aq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="lQd-v8-Qns" id="bcE-Je-gtt"/>
+                        <outlet property="diceImageView2" destination="SIz-D3-36Y" id="5t6-0C-TR3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
